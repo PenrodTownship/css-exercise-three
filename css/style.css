@@ -1,21 +1,64 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/**** global styles ****/
 body {
   background-color: #333;
-  font-family: sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 10px;
 }
 
+
+/**** core structure ****/
+
 .container {
+  background-color: #FAFAFA;
   margin: 0 auto;
   width: 420px;
 }
 
+
+/**** nav ****/
+
 nav {
+  background-color: #000000;
   margin: 0 auto;
-  padding: 10px 0 15px 15px;
+  padding: 15px 0 15px 15px;
   position: fixed;
   width: 420px;
 }
 
+
+/**** main content ****/
+
 .restaurant-list {
   padding-top: 50px;
+}
+
+.location {
+  width: 100%;
+  padding: 20px 0 30px 0; /* why can't i get top and bottom to be even */
+  border-bottom: 1px solid black;
+}
+
+.location:hover { background-color: #BDBDBD; }
+
+.content {
+  width: 92%;   /* still not sure i'm doing this right */
+  float: left;
+  padding: 0 4%;
+}
+
+.arrow {
+}
+
+.content h1 {
+  font-size: 1.55em;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.content h3 {
+  font-size: 1.2em;
 }
